@@ -4,7 +4,7 @@ export function VibecodeMark({ className }: { className?: string }) {
   return (
     <span
       className={cn(
-        'relative inline-flex items-center justify-center rounded-[10px] brand-gradient-bg shadow-[0_0_24px_-6px_var(--brand-to)]',
+        'relative inline-flex items-center justify-center rounded-[10px] bg-primary',
         className,
       )}
       aria-hidden="true"

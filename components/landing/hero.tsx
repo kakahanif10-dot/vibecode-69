@@ -43,7 +43,7 @@ export function Hero() {
         >
           Build software
           <br />
-          by simply <span className="brand-gradient-text">describing it</span>
+          by simply <span className="text-foreground">describing it</span>
         </motion.h1>
 
         <motion.p
@@ -93,7 +93,7 @@ export function Hero() {
               </button>
               <Button
                 onClick={start}
-                className="rounded-lg brand-gradient-bg font-medium text-primary-foreground shadow-[0_0_24px_-6px_var(--brand-to)] hover:opacity-90"
+                className="rounded-lg bg-primary font-medium text-primary-foreground hover:opacity-90"
               >
                 Start building
                 <ArrowRight className="ml-1 h-4 w-4" />

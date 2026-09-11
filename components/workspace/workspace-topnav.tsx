@@ -36,7 +36,7 @@ export function WorkspaceTopnav({
         <Button
           onClick={onDeploy}
           disabled={deployState === 'deploying'}
-          className="h-9 gap-1.5 rounded-lg brand-gradient-bg font-medium text-primary-foreground shadow-[0_0_20px_-8px_var(--brand-to)] hover:opacity-90"
+          className="h-9 gap-1.5 rounded-lg bg-primary font-medium text-primary-foreground hover:opacity-90"
         >
           {deployState === 'idle' && (
             <>
@@ -62,7 +62,7 @@ export function WorkspaceTopnav({
           )}
         </Button>
         <span
-          className="ml-1 h-8 w-8 rounded-full brand-gradient-bg"
+          className="ml-1 h-8 w-8 rounded-full border border-border bg-secondary"
           aria-label="Account"
         />
       </div>

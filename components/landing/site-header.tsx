@@ -66,7 +66,7 @@ export function SiteHeader() {
           <Button
             render={<Link href="/login" />}
             nativeButton={false}
-            className="rounded-full brand-gradient-bg font-medium text-primary-foreground shadow-[0_0_24px_-6px_var(--brand-to)] hover:opacity-90"
+            className="rounded-full bg-primary font-medium text-primary-foreground hover:opacity-90"
           >
             Get started
           </Button>
