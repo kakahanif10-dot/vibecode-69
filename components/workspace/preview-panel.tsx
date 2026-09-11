@@ -194,7 +194,7 @@ function MockCoffeeApp() {
           Freshly roasted beans, warm mornings, and a corner seat with your name
           on it.
         </p>
-        <button className="mt-5 rounded-full bg-[oklch(0.55_0.13_35)] px-5 py-2 text-xs font-medium text-white">
+        <button className="mt-5 rounded-full bg-[oklch(0.18_0_0)] px-5 py-2 text-xs font-medium text-white">
           See the menu
         </button>
       </div>
@@ -221,7 +221,7 @@ function MockCoffeeApp() {
 
 function CodeSurface() {
   return (
-    <div className="flex h-full overflow-hidden rounded-xl border border-border bg-[oklch(0.14_0.01_264)]">
+    <div className="flex h-full overflow-hidden rounded-xl border border-border bg-[oklch(0.14_0_0)]">
       {/* File tree */}
       <div className="thin-scroll w-52 shrink-0 overflow-y-auto border-r border-border p-2">
         {FILE_TREE.map((node) => (
