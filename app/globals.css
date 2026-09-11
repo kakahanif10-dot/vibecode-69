@@ -41,42 +41,42 @@
 :root {
   color-scheme: dark;
 
-  /* Strict monochrome — only pure black (#000000) and pure white (#FFFFFF) */
-  /* No greys, no gradation. Surfaces separate via solid white outlines. */
-  --background: #000000;
-  --foreground: #ffffff;
+  /* Monochrome like v0 — near-black surfaces, white text, seamless grey borders */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
 
-  --card: #000000;
-  --card-foreground: #ffffff;
+  --card: oklch(0.185 0 0);
+  --card-foreground: oklch(0.985 0 0);
 
-  --popover: #000000;
-  --popover-foreground: #ffffff;
+  --popover: oklch(0.185 0 0);
+  --popover-foreground: oklch(0.985 0 0);
 
   /* Primary button: solid white with black text */
-  --primary: #ffffff;
-  --primary-foreground: #000000;
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.145 0 0);
 
-  --secondary: #000000;
-  --secondary-foreground: #ffffff;
+  --secondary: oklch(0.225 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
 
-  --muted: #000000;
-  --muted-foreground: #ffffff;
+  --muted: oklch(0.225 0 0);
+  --muted-foreground: oklch(0.65 0 0);
 
-  --accent: #ffffff;
-  --accent-foreground: #000000;
+  --accent: oklch(0.985 0 0);
+  --accent-foreground: oklch(0.145 0 0);
 
-  --destructive: #ffffff;
+  --destructive: oklch(0.985 0 0);
 
-  --border: #ffffff;
-  --input: #ffffff;
-  --ring: #ffffff;
+  /* Seamless subtle grey borders (white at low opacity) */
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(1 0 0 / 20%);
 
   --radius: 0.75rem;
 
-  --sidebar: #000000;
-  --sidebar-foreground: #ffffff;
-  --sidebar-border: #ffffff;
-  --sidebar-accent: #ffffff;
+  --sidebar: oklch(0.145 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-accent: oklch(0.225 0 0);
 
   /* Brand wordmark: flat pure white (no gradient) */
   --brand-from: #ffffff;
@@ -112,9 +112,9 @@
   );
 }
 
-/* Solid white outline (no grey glow) */
+/* Seamless subtle grey outline */
 @utility glow-border {
-  box-shadow: 0 0 0 1px #ffffff;
+  box-shadow: 0 0 0 1px oklch(1 0 0 / 10%);
 }
 
 .glow-orb {
