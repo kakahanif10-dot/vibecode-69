@@ -24,10 +24,6 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden px-4 pt-40 pb-24">
-      {/* Backdrop */}
-      <div className="pointer-events-none absolute inset-0 grid-backdrop" />
-      <div className="pointer-events-none absolute -top-24 left-1/2 h-80 w-[42rem] -translate-x-1/2 rounded-full brand-gradient-bg opacity-25 glow-orb" />
-
       <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

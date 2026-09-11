@@ -8,9 +8,6 @@ export default function LoginPage() {
     <main className="relative flex min-h-screen bg-background">
       {/* Left brand panel */}
       <div className="relative hidden w-1/2 flex-col justify-between overflow-hidden border-r border-border p-10 lg:flex">
-        <div className="pointer-events-none absolute inset-0 grid-backdrop" />
-        <div className="pointer-events-none absolute -left-20 top-1/3 h-72 w-72 rounded-full brand-gradient-bg opacity-25 glow-orb" />
-
         <Link href="/" className="relative">
           <VibecodeLogo />
         </Link>
@@ -21,7 +18,7 @@ export default function LoginPage() {
             product before my coffee got cold.&rdquo;
           </blockquote>
           <div className="mt-6 flex items-center gap-3">
-            <span className="h-10 w-10 rounded-full brand-gradient-bg" />
+            <span className="h-10 w-10 rounded-full bg-foreground" />
             <div>
               <p className="text-sm font-medium">Ava Chen</p>
               <p className="text-sm text-muted-foreground">
