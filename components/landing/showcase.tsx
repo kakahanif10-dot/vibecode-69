@@ -47,7 +47,7 @@ export function Showcase() {
 
             <div className="bg-background/70 p-5">
               <div className="rounded-lg border border-border bg-card/70 p-5">
-                <div className="h-3 w-24 rounded-full brand-gradient-bg" />
+                <div className="h-3 w-24 rounded-full bg-foreground/25" />
                 <div className="mt-3 h-6 w-3/4 rounded-md bg-foreground/15" />
                 <div className="mt-2 h-3 w-1/2 rounded-md bg-muted-foreground/25" />
                 <div className="mt-5 grid grid-cols-3 gap-3">
@@ -59,7 +59,7 @@ export function Showcase() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 h-9 w-32 rounded-md brand-gradient-bg" />
+                <div className="mt-5 h-9 w-32 rounded-md bg-foreground/20" />
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ function ChatBubble({
       <div
         className={
           isUser
-            ? 'max-w-[85%] rounded-2xl rounded-br-sm brand-gradient-bg px-3.5 py-2.5 text-sm text-primary-foreground'
+            ? 'max-w-[85%] rounded-2xl rounded-br-sm bg-secondary px-3.5 py-2.5 text-sm text-secondary-foreground'
             : 'max-w-[85%] rounded-2xl rounded-bl-sm border border-border bg-card/80 px-3.5 py-2.5 text-sm text-foreground'
         }
       >

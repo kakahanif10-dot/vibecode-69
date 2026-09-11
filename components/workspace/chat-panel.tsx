@@ -95,7 +95,7 @@ export function ChatPanel({
             <button
               onClick={onSend}
               disabled={!input.trim() || generating}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg brand-gradient-bg text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-40"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-secondary text-secondary-foreground transition-opacity hover:opacity-90 disabled:opacity-40"
               aria-label="Send message"
             >
               <ArrowUp className="h-4 w-4" />
