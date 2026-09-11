@@ -41,46 +41,46 @@
 :root {
   color-scheme: dark;
 
-  /* Black & white minimalist palette — matched to v0.app */
-  /* Near-black background, crisp white headings, subtle low-contrast surfaces */
-  --background: oklch(0.14 0 0);
-  --foreground: oklch(0.97 0 0);
+  /* Strict monochrome — only pure black (#000000) and pure white (#FFFFFF) */
+  /* No greys, no gradation. Surfaces separate via solid white outlines. */
+  --background: #000000;
+  --foreground: #ffffff;
 
-  --card: oklch(0.18 0 0);
-  --card-foreground: oklch(0.97 0 0);
+  --card: #000000;
+  --card-foreground: #ffffff;
 
-  --popover: oklch(0.18 0 0);
-  --popover-foreground: oklch(0.97 0 0);
+  --popover: #000000;
+  --popover-foreground: #ffffff;
 
-  /* Primary is bright white like v0's Sign Up button */
-  --primary: oklch(0.98 0 0);
-  --primary-foreground: oklch(0.14 0 0);
+  /* Primary button: solid white with black text */
+  --primary: #ffffff;
+  --primary-foreground: #000000;
 
-  --secondary: oklch(0.24 0 0);
-  --secondary-foreground: oklch(0.97 0 0);
+  --secondary: #000000;
+  --secondary-foreground: #ffffff;
 
-  --muted: oklch(0.22 0 0);
-  --muted-foreground: oklch(0.65 0 0);
+  --muted: #000000;
+  --muted-foreground: #ffffff;
 
-  --accent: oklch(0.26 0 0);
-  --accent-foreground: oklch(0.97 0 0);
+  --accent: #ffffff;
+  --accent-foreground: #000000;
 
-  --destructive: oklch(0.62 0.2 25);
+  --destructive: #ffffff;
 
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.6 0 0);
+  --border: #ffffff;
+  --input: #ffffff;
+  --ring: #ffffff;
 
   --radius: 0.75rem;
 
-  --sidebar: oklch(0.16 0 0);
-  --sidebar-foreground: oklch(0.97 0 0);
-  --sidebar-border: oklch(1 0 0 / 8%);
-  --sidebar-accent: oklch(0.24 0 0);
+  --sidebar: #000000;
+  --sidebar-foreground: #ffffff;
+  --sidebar-border: #ffffff;
+  --sidebar-accent: #ffffff;
 
-  /* Monochrome brand gradient stops (light grey → mid grey) */
-  --brand-from: oklch(0.92 0 0);
-  --brand-to: oklch(0.68 0 0);
+  /* Brand wordmark: flat pure white (no gradient) */
+  --brand-from: #ffffff;
+  --brand-to: #ffffff;
 }
 
 @layer base {
@@ -112,28 +112,27 @@
   );
 }
 
-/* Subtle glowing border used across cards and inputs */
+/* Solid white outline (no grey glow) */
 @utility glow-border {
-  box-shadow:
-    0 0 0 1px oklch(1 0 0 / 8%),
-    0 0 30px -8px oklch(1 0 0 / 18%);
+  box-shadow: 0 0 0 1px #ffffff;
 }
 
 /* Grid backdrop for hero / deep-tech feel */
 .grid-backdrop {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 4%) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 4%) 1px, transparent 1px);
+    linear-gradient(to right, #ffffff 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
 }
 
 .glow-orb {
-  filter: blur(90px);
+  display: none;
 }
 
 ::selection {
-  background: oklch(1 0 0 / 22%);
+  background: #ffffff;
+  color: #000000;
 }
 
 /* Thin custom scrollbars for IDE feel */
